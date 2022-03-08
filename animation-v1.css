@@ -1,0 +1,54 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 
+@keyframes slideFromTop {
+    0% {
+      top: -100px;
+     
+    }
+    100% {
+      top: 0px;
+    }
+  } */
+
+/* .landing-header {
+    animation: 1.2s ease appear;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+  }
+
+.landing-p {
+    animation: 1.2s ease appear;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+  }
+
+.navigation {
+    animation: 1.2s ease slideFromTop;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+} 
+
+.landing-button {
+  animation: 1.2s ease appear;
+  animation-delay: 1.1s;
+  animation-fill-mode: both;
+}
+
+.landing-image {
+  animation: 1.2s ease appear;
+  animation-delay: 1.4s;
+  animation-fill-mode: both;
+}
+
+.about-me-wrapper {
+  animation: 1.2s ease appear;
+  animation-delay: 1.3s;
+  animation-fill-mode: both;
+} */

@@ -1,0 +1,953 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #202020;
+  letter-spacing: 0px !important;
+}
+
+.background-card-shadow {
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+}
+
+/* fonts */
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 4181426, 2021-09-16T14:10:26-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Sailec-Bold by Type Dynamic
+ * URL: https://www.myfonts.com/fonts/typedynamic/sailec/bold/
+ * 
+ * Webfont: Sailec-Regular by Type Dynamic
+ * URL: https://www.myfonts.com/fonts/typedynamic/sailec/regular/
+ * 
+ * 
+ * Webfonts copyright: Copyright &amp;#x00A9; 2014 by Type Dynamic. All rights reserved.
+ * 
+ * Â© 2021 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3fcdb2");
+
+@font-face {
+  font-family: "Sailec-Regular";
+  src: url("webFonts/SailecRegular/font.woff2") format("woff2"),
+    url("webFonts/SailecRegular/font.woff") format("woff");
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sailec-Bold";
+  src: url("webFonts/SailecBold/font.woff2") format("woff2"),
+    url("webFonts/SailecBold/font.woff") format("woff");
+  font-style: normal;
+}
+
+.freigeistbold {
+  font-family: FreigeistBold;
+}
+
+.saileclight {
+  font-family: SailecLight, sans-serif;
+}
+
+.sailecbold {
+  font-family: "Sailec-Bold", sans-serif;
+}
+
+.sailecregular {
+  font-family: "Sailec-Regular", sans-serif;
+}
+
+.sailecmedium {
+  font-family: "Sailec-Medium", sans-serif;
+}
+/* end fonts */
+
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: initial;
+  /* transition: all 0.3s ease, height 0ms; */
+  /* border: 1px solid  black; */
+  overflow-x: hidden;
+  background: #fbfcfc;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease, height 0ms;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.5px !important;
+}
+
+.border-all {
+  border: 1px solid #2d2d2d !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e8e3df !important;
+}
+
+.border-bottom-dark-mode {
+  border-bottom: 1px solid #505050 !important;
+}
+/*
+.border-right {
+  border-right: 1px solid #2d2d2d!important;
+}
+
+.border-left {
+  border-left: 1px solid #2d2d2d!important;
+}
+*/
+.border-top {
+  border-top: 1px solid #2d2d2d !important;
+}
+
+.logo {
+  width: 200px !important;
+  position: relative;
+  top: 2px;
+}
+
+.hide {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.2px;
+  color: #202020;
+}
+
+/* ----- DARK MODE CSS --------------------------*/
+
+.theme-icon {
+  font-size: 1em;
+}
+
+.theme-button {
+  box-sizing: border-box;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin-left: -35px;
+}
+
+.dark-btn {
+  background-color: transparent !important;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #202020;
+  -moz-box-shadow: inset 0px 0px 0px 2px #202020;
+  box-shadow: inset 0px 0px 0px 2px #202020;
+}
+
+.light-btn {
+  background-color: transparent !important;
+  -webkit-box-shadow: inset 0px 0px 0px 2px white;
+  -moz-box-shadow: inset 0px 0px 0px 2px white;
+  box-shadow: inset 0px 0px 0px 2px white;
+  color: white;
+}
+
+.dark-btn:hover {
+  background-color: #202020 !important;
+  color: white;
+}
+
+.light-btn:hover {
+  background-color: white !important;
+  color: #202020 !important;
+}
+
+.fas:hover {
+  cursor: pointer;
+}
+
+.fas {
+  transition: all 0.5 ease;
+}
+
+.fa-black {
+  color: #202020 !important;
+}
+
+.fa-white {
+  color: white !important;
+}
+
+.fa-sun {
+  color: white !important;
+}
+
+.darker-background {
+  background-color: #202020 !important;
+}
+
+.dark-background {
+  background-color: #303030 !important;
+}
+
+.light-background {
+  background-color: white !important;
+}
+
+.dark-background-notimportant {
+  background-color: #303030;
+}
+
+.white-text {
+  color: white !important;
+}
+
+/* ------- END DARK MODE ---------------*/
+
+.small-nav {
+  display: none;
+}
+
+.nav-slide-out {
+  transform: translateX(1050px);
+}
+
+.slide-out-nav {
+  display: none;
+  position: fixed;
+  width: 70vw;
+  height: 100vh;
+  /* background-color: #202020; */
+  z-index: 10000;
+  padding: 20px;
+  box-sizing: border-box;
+  right: 0;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.slide-out-nav-links a {
+  color: white !important;
+  font-family: "Sailec-Bold";
+  font-size: 2em;
+}
+
+.slide-out-nav-links {
+  list-style: none;
+}
+
+.home-slide,
+.about-slide,
+.projects-slide {
+  margin-bottom: 20px !important;
+}
+
+.slide-out-button {
+  position: relative;
+  top: 30px;
+  font-size: 2em;
+}
+
+.fa-times {
+  color: white;
+  font-size: 1.5em;
+  float: right;
+}
+
+.fa-times:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.menu-button {
+  padding: 10px;
+  background: hsla(280, 84%, 41%, 1);
+  transition: all 0.5s ease;
+
+  background: linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#61F4DE", endColorstr="#6E78FF", GradientType=1 );
+  border-radius: 5px;
+  border: none !important;
+}
+
+.menu-button h2 {
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 20px;
+  color: white !important;
+}
+
+.menu-button:hover {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.slide-up {
+  transform: translateY(-30px);
+}
+
+.nav-background {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  z-index: 200;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-wrapper {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  z-index: 200;
+  transition: all 0s;
+}
+
+.navigation {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  z-index: 200 !important;
+  transition: all 0.5s;
+  /* background-color: red; */
+  padding: 16px 0px 24px 0px;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo-name:hover {
+  cursor: pointer;
+}
+
+.logo {
+  position: relative;
+  left: 0px;
+  width: 150px;
+}
+
+.nav-links {
+  list-style: none;
+  justify-content: space-around;
+  margin-right: -24px;
+}
+
+.nav-links li {
+  font-weight: 500;
+  padding-right: 48px;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link-a {
+  font-size: 1em !important;
+  transition: 0.3s color !important;
+}
+
+.nav-link-a:hover {
+  color: #2272fc !important;
+}
+
+.logo-container,
+.nav-links {
+  display: flex;
+}
+
+.contact-button {
+  transition: all 0.3s ease, border 0ms;
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transform: translateX(20px) !important;
+  background: linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8711C1", endColorstr="#2472FC", GradientType=1 );
+  color: white;
+  font-size: 0.9em !important;
+}
+
+.arrow-getin {
+  position: relative;
+  right: 0px;
+  top: -1px;
+  transition: all 0.3s ease;
+  color: #202020;
+}
+
+.fa-arrow-right {
+  margin-left: 5px;
+  color: white;
+}
+
+.linkedinarrow {
+  margin-left: 0px !important;
+  position: relative;
+  right: 0px;
+  transition: right ease 0.5s;
+  color: white;
+}
+
+.landing-wrapper {
+  overflow: hidden;
+  transition: all 0.3s ease, height 0ms;
+  box-sizing: border-box;
+  padding: 120px 0px 120px 0px;
+}
+
+.landing-container {
+  width: 85vw;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.landing-text {
+  width: 60%;
+  height: 50%;
+  float: left;
+  padding-top: 60px;
+}
+
+.landing-header {
+  font-size: 4em;
+  font-weight: 500;
+  position: relative;
+}
+
+.landing-p {
+  margin-top: 20px;
+  font-size: 1.6em;
+  font-weight: 100 !important;
+}
+
+.landing-image {
+  float: right;
+  width: 40%;
+  height: 390px;
+  position: relative;
+  top: 100px;
+  right: 90px;
+  /* background-color: blue; */
+}
+
+.landing-image img {
+  height: 110%;
+  width: 150%;
+}
+
+.landing-buttons {
+  margin-right: 10px;
+}
+.landing-button-container {
+  margin-top: 50px;
+}
+
+.button-style:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-style {
+  position: relative;
+  padding: 10px 20px 10px 20px;
+  box-shadow: none;
+  border-radius: 5px;
+  border: none !important;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  background: hsla(280, 84%, 41%, 1);
+
+  background-image: linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.landing-button:hover {
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-viewmy {
+  position: relative;
+  right: 0px;
+  transition: all 0.3s ease;
+  font-weight: 200 !important;
+  color: white;
+}
+
+.about-me-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 50px;
+  transition: all 0.3s ease, height 0ms;
+  background: white;
+
+  box-sizing: border-box;
+}
+
+.about-me-container {
+  width: 85vw;
+
+  margin: 0 auto;
+  /* background-color: orange; */
+}
+
+.about-me-header {
+  width: 100%;
+  /* background-color: pink; */
+}
+
+.under-line {
+  margin-top: 20px;
+  height: 3px;
+  width: 50px;
+  background-color: black;
+}
+
+.about-me-content {
+  /* background-color: teal !important; */
+  width: 85vw;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.section-header {
+  font-size: 2.3em;
+  line-height: 45px;
+  font-family: "Sailec-Bold", sans-serif;
+  margin-bottom: 50px !important;
+  letter-spacing: 0px;
+}
+
+.projects-header {
+  margin-bottom: 50px;
+}
+
+.about-me-image-container {
+  height: 300px;
+  float: left;
+}
+
+.about-me-p-container p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  /* background-color: violet; */
+}
+
+/* --------------------START PROJECT SECTION CSS -------------------------*/
+
+.fas-link {
+  transition: all 0.3 ease;
+}
+.fas-link:hover {
+  color: hsla(218, 97%, 56%, 1);
+}
+
+.projects-wrapper {
+  background-color: transparent;
+  width: 100%;
+  padding: 120px 0px 80px 0px;
+  transition: all 0.3s ease, height 0ms;
+  box-sizing: border-box;
+}
+
+.projects-container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.project-row {
+  display: flex;
+}
+
+.project-row-2 {
+  margin-top: 30px;
+}
+
+.project {
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  height: fit-content;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.project:hover {
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.4);
+}
+.project-1,
+.project-3 {
+  margin-right: 30px;
+}
+
+.project-1 {
+  width: 60%;
+}
+
+.project-2 {
+  width: 40%;
+}
+
+.project-3 {
+  width: 40%;
+}
+
+.project-4 {
+  width: 60%;
+}
+
+.project-image {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.project-1-image {
+  background-image: url(images/project-1-image.jpg);
+}
+
+.project-2-image {
+  background-image: url(images/project-2-image.jpg);
+}
+
+.project-3-image {
+  background-image: url(images/project-3-image.jpg);
+}
+
+.project-4-image {
+  background-image: url(images/project-4-image.jpg);
+}
+
+.project-text-container {
+  padding: 35px;
+  height: 240px;
+
+  position: relative;
+}
+
+.project-title-container {
+  display: flex;
+}
+
+.project-title {
+  margin-bottom: 30px;
+  width: 60%;
+  font-size: 1.4em;
+
+  /* background-color: red !important; */
+}
+
+.project-description-container {
+  overflow: hidden;
+}
+
+.project-description {
+  opacity: 0.4;
+  line-height: 1.7em !important;
+  height: 120px;
+}
+
+.fa-external-link-alt,
+.fa-code {
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+
+.project-stack-container {
+  position: absolute;
+  bottom: 0;
+}
+
+.project-stack li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Sailec-Bold", sans-serif;
+  padding: 3px 5px 3px 5px;
+  border-radius: 5px;
+  margin-right: 0px;
+  font-size: 0.7em;
+  color: white;
+  background-color: #202020;
+}
+
+.project-links {
+  width: 40%;
+  /* background-color: pink; */
+}
+
+.project-link {
+  float: right;
+}
+
+.github-container {
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.github {
+  font-size: 1.4em;
+  margin-left: 5px;
+  position: relative;
+  top: 1px;
+}
+
+/* --------------------------END PROJECT SECTION CSS --------------------------------*/
+
+.contact-wrapper {
+  width: 100%;
+  transition: all 0.3s ease, height 0ms;
+  box-sizing: border-box;
+  padding: 0px 0px 120px 0px;
+}
+
+.contact-container {
+  width: 85vw;
+  margin: 0 auto;
+  display: flex;
+}
+
+.contact-text-section {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.contact-form-section {
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.contact-text-header {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+
+.contact-text-p {
+  font-size: 1.2em;
+}
+
+.social-icons {
+  font-size: 2em;
+  margin-right: 20px;
+  margin-top: 20px;
+  transition: 0.3s color;
+}
+
+.social-icons:hover {
+  color: #2272fc !important;
+}
+
+input {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1em;
+}
+
+.name {
+  padding: 0px 10px 20px 10px;
+}
+
+.email {
+  padding: 20px 10px 20px 10px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  outline: none;
+  padding: 20px 10px 20px 10px;
+  font-family: "Sailec-Regular";
+  border-bottom: 1px solid #e8e3df;
+  font-size: 1em;
+}
+
+.form-button {
+  width: 100%;
+  text-align: right;
+}
+
+.submit-button {
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+.footer-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 85vw;
+  display: flex;
+  padding: 0px 0px 30px 0px;
+}
+
+.footer-col {
+  width: 33.3%;
+  text-align: center;
+  /* border: 4px solid black; */
+}
+
+.footer-col h3 {
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.back-to-top {
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+  color: hsla(218, 97%, 56%, 1) !important;
+  transition: all 0.3 ease;
+}
+
+.col-1 {
+  text-align: left;
+  /* background-color: blue; */
+}
+
+.col-3 {
+  text-align: right;
+  /* background-color: red; */
+}
+
+.success-wrapper {
+  background-color: white;
+  padding: 30px 50px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.success-container {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  height: 100vh;
+  z-index: 500000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+}
+
+.okay-button {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    140deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+  color: white;
+  cursor: pointer;
+}

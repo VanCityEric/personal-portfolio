@@ -1,0 +1,456 @@
+@media only screen and (min-width: 1700px) {
+  * {
+    letter-spacing: 0 !important;
+  }
+  .navigation {
+    width: 1400px;
+  }
+
+  .landing-text-container {
+    width: 1400px;
+  }
+
+  .landing-wrapper {
+    padding: 130px 0px 130px 0px;
+  }
+
+  .landing-p {
+    font-size: 1.8em;
+  }
+
+  .landing-container {
+    width: 1400px;
+  }
+
+  .landing-image {
+    height: 500px;
+    right: 180px;
+  }
+
+  .landing-text {
+    padding-top: 100px;
+  }
+
+  .landing-header {
+    font-size: 5em;
+  }
+
+  .about-me-container {
+    width: 100%;
+  }
+
+  .about-me-content {
+    width: 100%;
+  }
+
+  .about-me-wrapper {
+    width: 1400px;
+  }
+
+  .projects-container {
+    width: 1400px;
+  }
+
+  .contact-container {
+    width: 1400px;
+  }
+
+  .footer-email-container {
+    width: 1400px;
+  }
+
+  .footer-container {
+    width: 1400px;
+  }
+
+  .project-title {
+    font-size: 1.9em;
+    line-height: 35px;
+  }
+
+  /* .contact-content {
+    height: 500px;
+  } */
+
+  .submit {
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1700px) {
+  * {
+    letter-spacing: 0 !important;
+  }
+
+  .navigation {
+    width: 1200px;
+  }
+
+  .landing-text-container {
+    width: 1200px;
+  }
+
+  .landing-wrapper {
+    padding: 130px 0px 130px 0px;
+  }
+
+  .landing-p {
+    font-size: 1.6em;
+  }
+
+  .landing-container {
+    width: 1200px;
+  }
+
+  .landing-image {
+    height: 500px;
+    right: 180px;
+  }
+
+  .landing-text {
+    padding-top: 100px;
+  }
+
+  .landing-header {
+    font-size: 4.5em;
+  }
+
+  .about-me-wrapper {
+    padding: 60px;
+  }
+
+  .about-me-container {
+    width: 100%;
+  }
+
+  .about-me-content {
+    width: 100%;
+  }
+
+  .projects-container {
+    width: 1200px;
+  }
+
+  .contact-container {
+    width: 1200px;
+  }
+
+  .footer-email-container {
+    width: 1200px;
+  }
+
+  .footer-container {
+    width: 1200px;
+  }
+
+  .project-title {
+    font-size: 1.8em;
+    line-height: 35px;
+  }
+
+  .project-1-title {
+    margin-top: 0px;
+  }
+
+  .project-1-stack {
+    margin-top: 90px;
+  }
+}
+/* 
+@media only screen and (max-width: 1300px) {
+  * {
+    letter-spacing: 0 !important;
+  }
+
+  .landing-image {
+    right: 130px;
+    top: 90px !important;
+  }
+
+  .logo {
+    width: 180px !important;
+  }
+
+  .landing-text {
+    width: 55%;
+  }
+
+  .project-title {
+    font-size: 1.6em;
+    line-height: 35px;
+  }
+} */
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  * {
+    letter-spacing: 0 !important;
+  }
+  .landing-image {
+    position: relative;
+    top: 110px;
+  }
+
+  .about-me-wrapper {
+    width: 85vw;
+  }
+
+  .about-me-content {
+    width: 100%;
+  }
+
+  .about-me-container {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.6em;
+  }
+
+  .project-1-title {
+    margin-top: 0px;
+  }
+
+  .project-1-stack {
+    margin-top: 90px;
+  }
+  .project-description {
+    opacity: 0.4;
+    line-height: 1.7em !important;
+    height: fit-content;
+  }
+
+  .project-text-container {
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  * {
+    letter-spacing: 0 !important;
+  }
+
+  .slide-out-nav {
+    display: block;
+  }
+
+  .wide-nav {
+    display: none;
+  }
+
+  .small-nav {
+    display: block;
+  }
+
+  .landing-image {
+    right: 130px;
+    top: 100px !important;
+  }
+
+  .landing-text {
+    width: 50%;
+  }
+
+  .section-header {
+    font-size: 2.3em;
+  }
+
+  .about-me-image-container {
+    float: none;
+    height: 140px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .about-me-image {
+    width: 130px;
+    height: 200px;
+  }
+
+  .about-me-content {
+    width: 100%;
+  }
+
+  .about-me-container {
+    width: 100%;
+  }
+
+  .about-me-wrapper {
+    width: 85vw;
+  }
+
+  .project-row {
+    display: block;
+  }
+
+  .project-1,
+  .project-2,
+  .project-3,
+  .project-4 {
+    width: 100%;
+  }
+
+  .project-1,
+  .project-3 {
+    margin-bottom: 30px;
+  }
+
+  .project-image {
+    height: 400px;
+  }
+
+  .project-title {
+    font-size: 1.8em;
+    line-height: 35px;
+  }
+
+  .contact-container {
+    display: block;
+  }
+
+  .contact-form-section {
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .contact-text-section {
+    width: 100%;
+  }
+
+  .contact-text-header {
+    font-size: 2.7em;
+    line-height: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  * {
+    letter-spacing: 0 !important;
+  }
+  /* .landing-container {
+    height: 70vw;
+  } */
+
+  .landing-image {
+    width: 300px !important;
+    height: 300px;
+    margin-top: -150px !important;
+  }
+
+  .landing-text {
+    width: 100%;
+  }
+
+  .landing-header {
+    font-size: 3.5em;
+  }
+
+  .project-title {
+    font-size: 1.7em;
+  }
+  .project-description {
+    height: 800px;
+  }
+  .project-text-container {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 644px) {
+  .landing-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 543px) {
+  * {
+    letter-spacing: 0 !important;
+  }
+  .landing-header {
+    font-size: 3em;
+  }
+
+  .landing-p {
+    font-size: 1.4em;
+  }
+
+  .about-me-wrapper {
+    padding: 50px;
+  }
+
+  .logo {
+    width: 150px !important;
+  }
+
+  .contact-text-header {
+    font-size: 1.9em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  * {
+    letter-spacing: 0 !important;
+  }
+  .about-me-wrapper {
+    padding: 30px 30px 50px 30px;
+    width: 90%;
+  }
+
+  .section-header {
+    font-size: 2em;
+  }
+
+  .about-me-p-container {
+    font-size: 1em;
+  }
+
+  .slide-out-nav-links a {
+    font-size: 1.5em;
+  }
+
+  .contact-form-section {
+    padding: 20px;
+  }
+
+  .project-text-container {
+    padding: 30px;
+  }
+
+  .about-me-p-container p {
+    font-size: 1em;
+  }
+
+  .project-image {
+    height: 250px;
+  }
+
+  .project-title {
+    font-size: 1.4em;
+  }
+
+  .contact-text-p {
+    font-size: 1em;
+  }
+
+  .social-icons {
+    font-size: 1.5em;
+  }
+
+  .footer-container {
+    display: block;
+  }
+
+  .footer-col {
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer-col h3 {
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
+
+  .col-3 {
+    text-align: left;
+  }
+}
